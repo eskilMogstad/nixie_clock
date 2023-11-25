@@ -1,0 +1,49 @@
+# Design process / tasks
+
+- [ ] Components / circuit design
+	- [x] 1. Nixie tubes
+		- [x] 1. Find suitable tubes and order them
+		- [x] 2. Find suitable sockets and order them
+	- [x] 2. Nixie driver
+		- [x] 1. Investigate old school nixie drivers
+		- [x] 2. Implement old school nixie driver functionality with more modern/available circuits
+	- [ ] 3. MCU
+		- [ ] 1. Figure out what wireless protocol the Philips Hue Bridge uses 
+		- [ ] 2. Find suitable microcontroller for the project
+			- [ ] Built in wireless support
+			- [ ] -||- UART
+			- [ ] -||- GPIO
+			- [ ] -||- RTC/XTAL, support for deepsleep power outage thing
+	- [ ] 4. HV Power
+		- [ ] 1. Determine voltage and current requirements based upon chosen tubes
+		- [ ] 2. Find suitable AFE controller
+		- [ ] 3. Transformer choice, never used transformers before
+		- [ ] 4. Design the converter, PowerCAD & Spice
+	- [ ] 5. LV Power
+		- [ ] 1. Map out current consumption, standardize on 3V3 for all low voltage
+		- [ ] 2. Design the buck converter, PowerCAD & Spice
+	- [ ] 6. Supporting circuitry
+		- [ ] 1. LEDs
+		- [ ] 2. Buttons
+		- [ ] 3. Voltage rail measurements?
+- [x] System design
+	- [x] 1. Single board vs. modular system
+- [ ] Layout
+	- [ ] 1. Implement NCAB general ruleset
+	- [ ] 2. Setup clearance rules wrt. HV according to IPC2221b
+	- [ ] 3. Placement
+- [ ] Mechanical Design
+	- [ ] 1. Import preliminary PCB into CAD, design enclosure for the system
+	- [ ] 2. Fix whatever should/needs to be fixed in PCB for mech to be nice as well
+- [ ] Layout
+	- [ ] 3. Do routing
+	- [ ] 4. Order boards
+	- [ ] 5. Order components
+- [ ] Assembly
+	- [ ] 1. Check that it is okay to assemble boards at work
+	- [ ] 2. Assemble boards at work
+- [ ] Firmware
+	- [ ] ...
+- [ ] Testing
+	- [ ] ....
+- [ ] Fin
